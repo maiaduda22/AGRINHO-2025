@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
 body {
   margin: 0;
   font-family: "Rubik Spray Paint", system-ui;
@@ -5,6 +6,11 @@ body {
   font-style: normal;
   background: #f5fbbf;
   color: #000;
+}
+.rubik-spray-paint-regular {
+  font-family: "Rubik Spray Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header {
