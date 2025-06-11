@@ -9,6 +9,10 @@ header {
   background: #b5e339;
   padding: 10px;
   text-align: center;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 h1 {
