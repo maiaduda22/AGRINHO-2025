@@ -1,21 +1,25 @@
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Arial, sans-serif;
   background: #f5fbbf;
   color: #000;
 }
 
 header {
-  background: #c0e740;
+  background: #b5e339;
   padding: 10px;
   text-align: center;
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 10px;
 }
 
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: white;
+}
 
+.search-bar {
+  margin: 10px 0;
+}
 
 .search-bar input {
   padding: 5px;
