@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5fbbf;
+  color: #000;
+}
+
+header {
+  background: #b5e339;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: white;
+}
+
+.search-bar {
+  margin: 10px 0;
+}
+
+.search-bar input {
+  padding: 5px;
+  width: 250px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  background: #1e5e36;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  background: #b5e339;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav ul .active {
+  background: #d6f3a3;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.content {
+  flex: 3;
+}
+
+.image-container img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.recipe {
+  margin-top: 20px;
+}
+
+.recipe ul {
+  padding-left: 20px;
+}
+
+.video {
+  margin-top: 20px;
+}
+
+.ads {
+  flex: 1;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.ads h4 {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.ad {
+  background: #ff6200;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.ad strong {
+  display: block;
+  color: white;
+  margin-top: 5px;
+}
+
+.ad a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.ad.logo {
+  background: #ff6200;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
