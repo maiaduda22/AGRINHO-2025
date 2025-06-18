@@ -97,8 +97,9 @@ main {
   line-height: 1.6;
 }
 
-.video {
-  margin-top: 20px;
+.video iframe {
+  width: 480px;
+  height: 270px;
 }
 
 .ads {
