@@ -1,98 +1,177 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pamonha de Queijo</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header>
-    <h1>RECEITAS DO CAMPO</h1>
-    <div class="search-bar">
-      <input type="text" placeholder="PROCURE UMA RECEITA" />
-      <button>PROCURAR</button>
-    </div>
-  </header>
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
 
-  <nav>
-    <ul>
-      <li>BOLO DE BANANA</li>
-      <li>CURAL</li>
-      <li>ARROZ COM PEQUI</li>
-      <li>FEIJOADA</li>
-      <li>POLENTA</li>
-      <li class="active">PAMONHA DE QUEIJO</li>
-      <li>PÃO DE QUEIJO</li>
-      <li>RABADA</li>
-      <li>ANGU</li>
-      <li>VACA ATOLADA</li>
-    </ul>
-  </nav>
+body {
+  margin: 0;
+  font-family: "Rubik Spray Paint", system-ui;
+  font-weight: 300;
+  font-style: normal;
+  background: #fdfdd5; /* tom mais suave */
+  color: #222;
+}
 
-  <main>
-    <div class="content">
-      <div class="image-container">
-        <img src="pamonha.jpg" alt="Pamonha de queijo" />
-      </div>
+header {
+  background: #b5e339;
+  padding: 10px;
+  text-align: center;
+}
 
-      <div class="recipe">
-        <h2>PAMONHA DE QUEIJO</h2>
+h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: white;
+  text-shadow: 1px 1px 2px #6b6b6b;
+}
 
-        <h3>INGREDIENTES</h3>
-        <ul>
-          <li>10 espigas de milho verde com as palhas</li>
-          <li>3 colheres de manteiga (chá)</li>
-          <li>1 xíc. e 1/2 de leite (chá)</li>
-          <li>1 colher de sopa de açúcar</li>
-          <li>1/2 colher de sal (chá)</li>
-          <li>200g de queijo coalho em cubos</li>
-          <li>3 colheres de manteiga (chá)</li>
-        </ul>
+.search-bar {
+  margin: 10px 0;
+}
 
-        <h3>MODO DE PREPARO</h3>
-        <p>
-          Com uma faca retire os grãos da espiga. <br>
-          Leve o milho para o liquidificador. <br>
-          Acrescente o sal, a manteiga e o leite. <br>
-          Bata por 3 minutos. <br>
-          Coloque em um recipiente. <br>
-          Repita o processo até acabar os grãos. <br>
-          Com as palhas reservadas faça os saquinhos. <br>
-          Coloque uma concha da mistura do milho e um cubo de queijo coalho em cada saquinho. <br>
-          E amarre com um barbante. <br>
-          Cozinhe em uma panela grande com bastante água durante 40 minutos.
-        </p>
-      </div>
+.search-bar input {
+  padding: 5px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
 
-      <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ab34296No7g?si=X" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
+.search-bar button {
+  padding: 6px 12px;
+  background: #1e5e36;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
-    <aside class="ads">
-      <h4>PUBLICIDADE</h4>
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  background: #b5e339;
+  margin: 0;
+}
 
-      <div class="ad">
-        <div>✈ São Paulo - Miami</div>
-        <strong>R$ 2.212</strong>
-        <a href="#">RESERVE AGORA</a>
-      </div>
+nav ul li {
+  margin: 5px 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #a4cf2e;
+  border-radius: 5px;
+  transition: 0.3s;
+}
 
-      <div class="ad">
-        <div>✈ São Paulo - Orlando</div>
-        <strong>R$ 1.974</strong>
-        <a href="#">RESERVE AGORA</a>
-      </div>
+nav ul li:hover {
+  background-color: #d8f3a3;
+}
 
-      <div class="ad">
-        <div>✈ São Paulo - Paris</div>
-        <strong>R$ 4.836</strong>
-        <a href="#">RESERVE AGORA</a>
-      </div>
+nav ul .active {
+  background: #d6f3a3;
+  font-weight: bold;
+}
 
-      <div class="ad logo">K</div>
-    </aside>
-  </main>
-</body>
-</html>
+main {
+  display: flex;
+  padding: 30px;
+  gap: 40px;
+}
+
+.content {
+  flex: 3;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.recipe {
+  margin-top: 20px;
+}
+
+.recipe h2, .recipe h3 {
+  color: #1e5e36;
+  margin-bottom: 10px;
+}
+
+.recipe ul {
+  padding-left: 25px;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.recipe p {
+  line-height: 1.8;
+  font-size: 1rem;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+.video {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.video iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border-radius: 10px;
+}
+
+.ads {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.ads h4 {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.ad {
+  background: #ff6200;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  position: relative;
+}
+
+.ad strong {
+  display: block;
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+
+.ad a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.ad.logo {
+  background: #ff6200;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+}
