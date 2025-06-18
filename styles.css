@@ -13,9 +13,10 @@ header {
 }
 
 h1 {
-  margin: 0;
-  font-size: 2rem;
+  font-family: 'Sweety Milkys', cursive;
+  font-size: 2.5rem; /* opcionalmente aumente o tamanho */
   color: white;
+  margin: 0;
 }
 
 .search-bar {
