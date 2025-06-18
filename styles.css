@@ -1,133 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
-body {
-  margin: 0;
-  font-family: "Rubik Spray Paint", system-ui;
-  font-weight: 300;
-  font-style: normal;
-  background: #f5fbbf;
-  color: #000;
-}
-.rubik-spray-paint-regular {
-  font-family: "Rubik Spray Paint", system-ui;
-  font-weight: 300;
-  font-style: normal;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pamonha de Queijo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>RECEITAS DO CAMPO</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="PROCURE UMA RECEITA" />
+      <button>PROCURAR</button>
+    </div>
+  </header>
 
-header {
-  background: #b5e339;
-  padding: 10px;
-  text-align: center;
-}
+  <nav>
+    <ul>
+      <li>BOLO DE BANANA</li>
+      <li>CURAL</li>
+      <li>ARROZ COM PEQUI</li>
+      <li>FEIJOADA</li>
+      <li>POLENTA</li>
+      <li class="active">PAMONHA DE QUEIJO</li>
+      <li>PÃO DE QUEIJO</li>
+      <li>RABADA</li>
+      <li>ANGU</li>
+      <li>VACA ATOLADA</li>
+    </ul>
+  </nav>
 
-h1 {
-  margin: 0;
-  font-size: 2rem;
-  color: white;
-}
+  <main>
+    <div class="content">
+      <div class="image-container">
+        <img src="pamonha.jpg" alt="Pamonha de queijo" />
+      </div>
 
-.search-bar {
-  margin: 10px 0;
-}
+      <div class="recipe">
+        <h2>PAMONHA DE QUEIJO</h2>
 
-.search-bar input {
-  padding: 5px;
-  width: 250px;
-}
+        <h3>INGREDIENTES</h3>
+        <ul>
+          <li>10 espigas de milho verde com as palhas</li>
+          <li>3 colheres de manteiga (chá)</li>
+          <li>1 xíc. e 1/2 de leite (chá)</li>
+          <li>1 colher de sopa de açúcar</li>
+          <li>1/2 colher de sal (chá)</li>
+          <li>200g de queijo coalho em cubos</li>
+          <li>3 colheres de manteiga (chá)</li>
+        </ul>
 
-.search-bar button {
-  padding: 5px 10px;
-  background: #1e5e36;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
+        <h3>MODO DE PREPARO</h3>
+        <p>
+          Com uma faca retire os grãos da espiga. <br>
+          Leve o milho para o liquidificador. <br>
+          Acrescente o sal, a manteiga e o leite. <br>
+          Bata por 3 minutos. <br>
+          Coloque em um recipiente. <br>
+          Repita o processo até acabar os grãos. <br>
+          Com as palhas reservadas faça os saquinhos. <br>
+          Coloque uma concha da mistura do milho e um cubo de queijo coalho em cada saquinho. <br>
+          E amarre com um barbante. <br>
+          Cozinhe em uma panela grande com bastante água durante 40 minutos.
+        </p>
+      </div>
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  background: #b5e339;
-  margin: 0;
-}
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ab34296No7g?si=X" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
 
-nav ul li {
-  margin: 0 10px;
-  padding: 10px;
-  cursor: pointer;
-}
+    <aside class="ads">
+      <h4>PUBLICIDADE</h4>
 
-nav ul .active {
-  background: #d6f3a3;
-  font-weight: bold;
-}
+      <div class="ad">
+        <div>✈ São Paulo - Miami</div>
+        <strong>R$ 2.212</strong>
+        <a href="#">RESERVE AGORA</a>
+      </div>
 
-main {
-  display: flex;
-  padding: 20px;
-  gap: 20px;
-}
+      <div class="ad">
+        <div>✈ São Paulo - Orlando</div>
+        <strong>R$ 1.974</strong>
+        <a href="#">RESERVE AGORA</a>
+      </div>
 
-.content {
-  flex: 3;
-}
+      <div class="ad">
+        <div>✈ São Paulo - Paris</div>
+        <strong>R$ 4.836</strong>
+        <a href="#">RESERVE AGORA</a>
+      </div>
 
-.image-container img {
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-}
-
-.recipe {
-  margin-top: 20px;
-}
-
-.recipe ul {
-  padding-left: 20px;
-}
-
-.video {
-  margin-top: 20px;
-}
-
-.ads {
-  flex: 1;
-  background: white;
-  padding: 10px;
-  border: 1px solid #ccc;
-}
-
-.ads h4 {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #888;
-}
-
-.ad {
-  background: #ff6200;
-  color: white;
-  padding: 10px;
-  margin: 10px 0;
-  font-size: 0.9rem;
-  position: relative;
-}
-
-.ad strong {
-  display: block;
-  color: white;
-  margin-top: 5px;
-}
-
-.ad a {
-  color: white;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.ad.logo {
-  background: #ff6200;
-  font-size: 3rem;
-  text-align: center;
-  font-weight: bold;
-}
+      <div class="ad logo">K</div>
+    </aside>
+  </main>
+</body>
+</html>
