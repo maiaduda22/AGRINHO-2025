@@ -97,10 +97,17 @@ main {
   line-height: 1.6;
 }
 
-.video iframe {
-  width: 480px;
-  height: 270px;
+.video {
+  margin-top: 20px;
+  max-width: 100%;
 }
+
+.video iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
 
 .ads {
   flex: 1;
